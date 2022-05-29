@@ -1,0 +1,4 @@
+FROM openjdk:17
+COPY ./src/main/java/com.movies.api/Application/ /tmp
+WORKDIR /tmp
+ENTRYPOINT ["java","HelloWorld"]
